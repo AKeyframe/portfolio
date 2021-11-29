@@ -20,6 +20,6 @@ A Software Engineer, Designer, and 3D artist who creates clean, efficient, and s
 - [Bookworms Bible](https://bookworms-bible-jet.vercel.app/)
     - [Frontend](https://github.com/AKeyframe/Bookworms-Bible)
 
-- [GA Club]()
+- [GA Club](https://ga-club-frontend.herokuapp.com/)
     - [Frontend]()
     - [Backend]()

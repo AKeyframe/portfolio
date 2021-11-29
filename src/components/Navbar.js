@@ -1,35 +1,102 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+
 
 import '../App.scss'
 
 export default function Navbar(props){
-    return(
-        <div>
-            <div className='navbar'>
-                <div className='center'>
-                    <h1>Alec Kagebein</h1>
-                </div>
+    const WIDTH = window.screen.width;
+    
 
-                <div className='navLinks'>
-                    <div className='link'>
-                        <Link to='about'>
-                            <h1>About</h1>
-                        </Link>
-                    </div>
-                    
-                    <div className='link'>
-                        <Link to='/'>
-                            <h1>My Work</h1> 
-                        </Link>
+    const [menu, setMenu] = useState(false);
+
+    function toggleMenu(){setMenu(!menu);}
+    
+
+    console.log(WIDTH)
+
+    if(WIDTH < 650){
+        return(
+            <div>
+                <div className='navbar'>
+                    <div className='center'>
+                        <h1>AK</h1>
                     </div>
 
-                    <div className='link'>
-                        <Link to='contact'>
-                            <h1>Contact Me</h1>
-                        </Link>
-                    </div>   
+                    <div className='navMenu'>
+                        <h1 style={{
+                                transform: menu ? 'rotate(90deg)' : '', 
+                                transition: 'transform 250ms ease', // smooth transition
+                            }}
+                            onClick={toggleMenu}
+                        >☰</h1>
+                    </div>
+                    <div className={menu ? 'sidebar active' : 'sidebar'}>
+                        <div className='x' >
+                            <p onClick={toggleMenu}>X</p>
+                        </div>
+                        <div className=
+                            {menu ? 'navLinks linksActive' : 'navLinks'}>
+                            <div className='link'>
+                                <Link onClick={toggleMenu} to='about'>
+                                    <h2>About</h2>
+                                </Link>
+                            </div>
+                                    
+                            <div className='link'>
+                                <Link onClick={toggleMenu} to='/'>
+                                    <h2>My Work</h2> 
+                                </Link>
+                            </div>
+
+                            <div className='link'>
+                                <Link onClick={toggleMenu} to='contact'>
+                                    <h2>Contact Me</h2>
+                                </Link>
+                            </div>
+
+                            <div id='resume' className='link'>
+                                        
+                            </div>   
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+
+    } else if(WIDTH >= 650){
+        return(
+            <div>
+                <div className='navbar'>
+                    <div className='center'>
+                        <h1>Alec Kagebein</h1>
+                    </div>
+
+                    <div className='navLinks'>
+                        <div className='link'>
+                            <Link to='about'>
+                                <h1>About</h1>
+                            </Link>
+                        </div>
+                        
+                        <div className='link'>
+                            <Link to='/'>
+                                <h1>My Work</h1> 
+                            </Link>
+                        </div>
+
+                        <div className='link'>
+                            <Link to='contact'>
+                                <h1>Contact Me</h1>
+                            </Link>
+                        </div>
+
+                        <div id='resume' className='link'>
+                        
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }

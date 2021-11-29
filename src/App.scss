@@ -1,6 +1,8 @@
-$bgColor: 'lightslategray';
+$bgColor: #260a2f;
+$bgSecColor: #472353;
 $hiColor: black;
-$textColor: black;
+$textColor: rgb(136, 100, 156);
+$textHiColor: rgb(219, 189, 253);
 
 
 .App{
@@ -9,11 +11,13 @@ $textColor: black;
 
 
 body{
-    background-color: lightslategray;
+    background-color: $bgColor;
+    color: $textColor;
 }
 
 a, a:visited{
     text-decoration: none;
+    
 }
 
 
@@ -28,22 +32,81 @@ a, a:visited{
 /////////////////////////////////////////////////////////////////
 .navbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 
-    .navLinks{
-        display: flex;
-        justify-content: space-evenly;
-    }
+    margin: 20px;
+
 
     h1{
         margin: 10px 0px;
+        color: $textHiColor;
+        font-size: 50px;
+    }
+
+    h2{ 
+        margin: 25px 0px;
+        color: $textHiColor;
+        font-size: 45px;
     }
 
     a, a:visited{
         color: $hiColor;
         text-decoration: none;
-        font-size: 10px;
+        transition: 0.3s;
     }
+
+    .sidebar{
+        
+        background-color: $bgSecColor;
+        position: absolute;
+        overflow-x: hidden; 
+        width: 0;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        transition: .5s;
+
+        .x{
+            display: flex;
+            justify-content: right;
+            margin: 30px 30px 0px 0px;
+            font-size: 50px;
+
+            p{
+                margin: 0;
+            }
+        }
+
+        .navLinks{
+            visibility: hidden;
+            display: flex;
+            white-space: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            transition: .3s;
+            opacity: 0%;
+            
+
+            
+        }
+
+        .linksActive{
+            visibility: visible;
+            transition-delay: .5s;
+            transition: 2s;
+            opacity: 100%;
+        }
+        
+    }
+    .active {
+        width: 80vw;
+    }
+    
+
+   
 
     .center{
         align-self: center;
@@ -89,9 +152,9 @@ a, a:visited{
 //                       Pages
 /////////////////////////////////////////////////////////////////
 
-// #about{
-    
-// }
+#about{
+    margin: 20px;   
+}
 
 #work{
     display: flex;

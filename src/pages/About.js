@@ -2,7 +2,9 @@ export default function About(props){
     return(
         <div>
             <div id='about'>
-                <h1>About Page</h1>
+                <div>
+                    <h1 className='title'>About Me</h1>
+                </div>
                 
                 <div>
                     <p>

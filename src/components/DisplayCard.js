@@ -11,13 +11,13 @@ export default function DisplayCard(props){
     const [modal, setModal] = useState(false);
 
     function modalToFalse(){setModal(false);}
-    function mdoalToTrue(){setModal(true);}
+    function modalToTrue(){setModal(true);}
 
 
     return(
         <div>
             <div className='card'>
-                <div className='cardImage' onClick={mdoalToTrue}>
+                <div className='cardImage' onClick={modalToTrue}>
                     <img className='displayImage' src={props.photos[0]} />
                 </div>
                 <Modal isOpen={modal} 
@@ -27,7 +27,6 @@ export default function DisplayCard(props){
                         
                         //style={customStyles}
                 >
-                    <button onClick={modalToFalse}>x</button>
                     <CardModal 
                         pos={props.pos}
                         name={props.name}
