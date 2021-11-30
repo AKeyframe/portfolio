@@ -17,8 +17,11 @@ export default function DisplayCard(props){
     return(
         <div>
             <div className='card'>
-                <div className='cardImage' onClick={modalToTrue}>
-                    <img className='displayImage' src={props.photos[0]} />
+                <div className='cardImage'>
+                    <img className='displayImage' 
+                         src={props.photos[0]}
+                         onClick={modalToTrue}
+                    />
                 </div>
                 <Modal isOpen={modal} 
                         ariaHideApp={false}

@@ -6,7 +6,6 @@ import '../App.scss'
 
 export default function Navbar(props){
     const WIDTH = window.screen.width;
-    
 
     const [menu, setMenu] = useState(false);
 
@@ -56,7 +55,7 @@ export default function Navbar(props){
                             </div>
 
                             <div id='resume' className='link'>
-                                        
+                                
                             </div>   
                         </div>
                     </div>
