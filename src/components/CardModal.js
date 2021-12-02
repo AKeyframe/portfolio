@@ -35,8 +35,7 @@ export default function CardModal(props){
                     </div>
 
                     <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida in fermentum et sollicitudin ac orci. Amet mauris commodo quis imperdiet massa. Volutpat consequat mauris nunc congue nisi.
+                        <p>{props.about}
                         </p>
                     </div>
 
