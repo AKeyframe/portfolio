@@ -26,7 +26,6 @@ export default function Navbar(props){
                     <div className='navMenu'>
                        <FaBars style={{
                                 color: '#ead8fd',
-                                marginTop: "5px",
                                 fontSize: '50px',
                                 transform: menu ? 'rotate(90deg)' : '', 
                                 transition: 'transform 250ms ease', // smooth transition

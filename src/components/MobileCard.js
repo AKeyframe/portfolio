@@ -8,6 +8,8 @@ import MobileModal from "./MobileModal";
 
 export default function MobileCard(props){
 
+   
+
     const [modal, setModal] = useState(false);
 
     function toggleModal(){setModal(!modal);}
@@ -32,6 +34,15 @@ export default function MobileCard(props){
                 <Modal isOpen={modal} 
                         ariaHideApp={false}
                         onRequestClose={toggleModal}
+                        style={{
+                            overlay: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.75)'
+                            },
+                            content : {
+                                border: 'solid black',
+                                backgroundColor       : '#33103f'      
+                            },
+                        }}
 
                         
                         //style={customStyles}
@@ -59,3 +70,4 @@ export default function MobileCard(props){
         </div>
     );
 }
+

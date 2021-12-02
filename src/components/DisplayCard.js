@@ -26,11 +26,20 @@ export default function DisplayCard(props){
                 <Modal isOpen={modal} 
                         ariaHideApp={false}
                         onRequestClose={modalToFalse}
-
+                        style={{
+                            overlay: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.75)'
+                            },
+                            content : {
+                                border: 'solid black',
+                                backgroundColor: '#33103f'      
+                            },
+                        }}
                         
                         //style={customStyles}
                 >
                     <CardModal 
+                        
                         pos={props.pos}
                         name={props.name}
                         about={props.about}
@@ -48,12 +57,12 @@ export default function DisplayCard(props){
 
 // const customStyles = {
 //     content : {
-//         top                   : '50%',
-//         left                  : '50%',
-//         right                 : 'auto',
-//         bottom                : 'auto',
-//         marginRight           : '-50%',
-//         transform             : 'translate(-50%, -50%)',
-//         backgroundColor       : '#F0AA89'      
+//         // top                   : '50%',
+//         // left                  : '50%',
+//         // right                 : 'auto',
+//         // bottom                : 'auto',
+//         // marginRight           : '-50%',
+//         // transform             : 'translate(-50%, -50%)',
+//         backgroundColor       : '#33103f'      
 //       }
 //   };
