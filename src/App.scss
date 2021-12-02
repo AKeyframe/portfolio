@@ -1,11 +1,17 @@
 $bgColor: #260a2f; //#1b0422;
 $bgSecColor: #33103f;
-$navColor: #42244d;
+$navColor: #3b104b;
 $hiColor: #9f5eee;
 $textColor: rgb(139, 108, 156);
 $textSecColor: rgb(166, 128, 209);
 $textHiColor: rgb(234, 216, 253);
 
+//#280f36 dark purple
+//#632b6c purple
+//#c86b98 dark pink
+//#f09f9c peach
+//#ffc1a0 tan / lighter peach
+//#fe9c7f rosey orange 
 
 .App{
     box-sizing: border-box;
@@ -21,7 +27,6 @@ a, a:visited{
     text-decoration: none;
     
 }
-
 
 .background {
     background-color: $bgSecColor;
@@ -67,6 +72,16 @@ a, a:visited{
     }
 }
 
+.hilight {
+    color: $textHiColor;
+}
+
+.gallery{
+
+    border: solid $textColor 1px;
+    
+}
+
 /////////////////////////////////////////////////////////////////
 //                       Components
 /////////////////////////////////////////////////////////////////
@@ -76,7 +91,7 @@ a, a:visited{
     justify-content: space-between;
 
     
-    margin: 20px;
+    margin: 10px 20px;
 
 
     h1{
@@ -111,7 +126,7 @@ a, a:visited{
         .x{
             display: flex;
             justify-content: right;
-            margin: 30px 30px 0px 0px;
+            margin: 22px 25px 0px 0px;
             font-size: 50px;
 
             p{
@@ -155,6 +170,24 @@ a, a:visited{
     }
 }
 
+.intro{
+    h2{
+        color: $textSecColor;
+        margin: 5px 0px 0px 20px;
+    }
+
+    h1{
+        color: $textHiColor;
+        margin: 2px 0px 0px 20px;
+    }
+
+    p{
+        margin: 5px 20px 10px 20px;
+        color: $textColor;
+        font-size: 18px;
+    }
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -179,7 +212,7 @@ a, a:visited{
     display: flex;
     flex-direction: column;
 
-    margin: 20px;
+    margin: 10px 20px 30px 20px;
     padding: 10px;
 
     h2 {
@@ -204,6 +237,14 @@ a, a:visited{
     }
 }
 
+.mobileModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
 
 
 /////////////////////////////////////////////////////////////////
@@ -223,6 +264,7 @@ a, a:visited{
 
 #contact{
     margin: 20px;
+    font-size: 20px;
 }
 
 

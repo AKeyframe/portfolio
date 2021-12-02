@@ -1,4 +1,5 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { BsFileEarmarkPersonFill } from 'react-icons/bs';
 
 export default function About(props){
     return(
@@ -14,6 +15,12 @@ export default function About(props){
                     </p>
                 </div>
                 <div className='icons'>
+                    <div>
+                        <a href='https://docs.google.com/document/d/1G9sJpUkvHHsGJKRQ1q879Pq4IMZNWCdcEVOP_007X1o/edit?usp=sharing'>
+                            <BsFileEarmarkPersonFill className='rIcon'/>
+                        </a>
+                    </div>
+
                     <div>
                         <a href='https://www.linkedin.com/in/alec-kagebein/'>
                             <AiFillLinkedin className='rIcon'/>

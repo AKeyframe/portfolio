@@ -6,6 +6,7 @@ import DisplayCard from "../components/DisplayCard";
 
 //Data
 import {data} from '../projects/ProjectData'
+import Intro from '../components/Intro';
 
 export default function MyWork(props){
     const WIDTH = window.screen.width;
@@ -47,6 +48,7 @@ export default function MyWork(props){
         return(
             <div>
                 <div id='work'>
+                    <Intro />
                     {mobileDisplayProjects()}
                 </div>
             </div>
@@ -56,6 +58,7 @@ export default function MyWork(props){
         return(
             <div>
                 <div id='work'>
+                    <Intro />
                     {displayProjects()}
                 </div>
             </div>
