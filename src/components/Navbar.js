@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { FaBars } from 'react-icons/fa'
 
 import '../App.scss'
 
@@ -23,12 +24,15 @@ export default function Navbar(props){
                     </div>
 
                     <div className='navMenu'>
-                        <h1 style={{
+                       <FaBars style={{
+                                color: '#ead8fd',
+                                marginTop: "5px",
+                                fontSize: '50px',
                                 transform: menu ? 'rotate(90deg)' : '', 
                                 transition: 'transform 250ms ease', // smooth transition
                             }}
-                            onClick={toggleMenu}
-                        >☰</h1>
+                            id='bars'
+                            onClick={toggleMenu}/>
                     </div>
                     <div className={menu ? 'sidebar active' : 'sidebar'}>
                         <div className='x' >

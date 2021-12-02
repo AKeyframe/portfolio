@@ -4,7 +4,7 @@ $navColor: #3b104b;
 $hiColor: #9f5eee;
 $textColor: rgb(139, 108, 156);
 $textSecColor: rgb(166, 128, 209);
-$textHiColor: rgb(234, 216, 253);
+$textHiColor: #ead8fd;
 
 //#280f36 dark purple
 //#632b6c purple
@@ -66,7 +66,7 @@ a, a:visited{
         padding: 2px 3px;
 
         color: $textColor;
-        font-size: 11px;
+        font-size: 14px;
         border: solid $textColor;
 
     }
@@ -85,6 +85,7 @@ a, a:visited{
 /////////////////////////////////////////////////////////////////
 //                       Components
 /////////////////////////////////////////////////////////////////
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -93,6 +94,11 @@ a, a:visited{
     
     margin: 10px 20px;
 
+    .navMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     h1{
         margin: 10px 0px;
@@ -184,7 +190,7 @@ a, a:visited{
     p{
         margin: 5px 20px 10px 20px;
         color: $textColor;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -252,19 +258,21 @@ a, a:visited{
 /////////////////////////////////////////////////////////////////
 
 #about{
-    margin: 20px;
-    font-size: 20px;   
+    margin: 20px 40px;
+    font-size: 16px;   
 }
 
 #work{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin: 5px;
 }
 
 #contact{
-    margin: 20px;
-    font-size: 20px;
+    margin: 20px 40px;
+    font-size: 16px;
 }
 
 
