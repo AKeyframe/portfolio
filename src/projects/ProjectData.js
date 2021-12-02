@@ -31,7 +31,7 @@ const data = [
      {name: 'DnD',
      about: "This DnD character manager is a full CRUD, full MEEN stack application, created to help cleanly present the numerous points of information for a player's character and campaign in a clear and concise manner. Right now this application features, modern and secure user authentication, as well as, character and campaign creation, campaign invitations, and a fully self referential database.",
      photos: ['https://i.imgur.com/zxr8pLt.png'],
-     live: 'empty',
+     live: 'https://dnd-character-manager.herokuapp.com/',
      gitOne: 'https://github.com/AKeyframe/dnd-character-manager',
      gitTwo: 'empty',
      tags: ['Javascript', 'MEEN', 'MongoDB', 'Express', 'EJS', 'Node', 'Method-Override', 'Bcrypt'],
