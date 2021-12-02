@@ -40,7 +40,7 @@ export default function MobileCard(props){
                                 backgroundColor: 'rgba(0, 0, 0, 0.75)'
                             },
                             content : {
-                                width: '70vw',
+                                width: '65vw',
                                 height: '80vh',
                                 top: '50%',
                                 left: '50%',
