@@ -36,9 +36,18 @@ export default function MobileCard(props){
                         onRequestClose={toggleModal}
                         style={{
                             overlay: {
+                                
                                 backgroundColor: 'rgba(0, 0, 0, 0.75)'
                             },
                             content : {
+                                width: '60vw',
+                                height: '80vh',
+                                top: '50%',
+                                left: '50%',
+                                right: 'auto',
+                                bottom: 'auto',
+                                marginRight: '50%',
+                                transform: 'translate(-50%, -50%)',
                                 border: 'solid black',
                                 backgroundColor       : '#33103f'      
                             },
