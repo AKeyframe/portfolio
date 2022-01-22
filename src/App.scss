@@ -68,6 +68,16 @@ a, a:visited{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        color: $textSecColor;
+    }
+
+    a:visited{
+        color: $textSecColor;
+    }
+
+    a:hover{
+        color: $textHiColor;
     }
 }
 
