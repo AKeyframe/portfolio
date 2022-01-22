@@ -17,7 +17,7 @@ export default function Navbar(props){
 
     if(WIDTH < 650){
         return(
-            <div>
+            <div className='nav'>
                 <div className='navbar'>
                     <div className='center'>
                         <h1>AK</h1>

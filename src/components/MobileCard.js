@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
+import { ImChrome } from 'react-icons/im';
+import { AiFillGithub } from 'react-icons/ai';
 
 import '../App.scss'
 
@@ -14,6 +16,64 @@ export default function MobileCard(props){
 
     function toggleModal(){setModal(!modal);}
 
+    function displayLinks(){
+        if(props.live !== 'empty' && props.gitTwo !== 'empty'){
+            return(
+                <div className='mobileModalLinks'>
+                    <div className='link'>
+                        <a href={props.live}>
+                            <ImChrome className='rIconModal'/>Deployed
+                        </a>
+                    </div>
+
+                    <div className='link'>
+                        <a href={props.gitOne}>
+                            <AiFillGithub className='rIconModal'/>Frontend
+                        </a>
+                    </div>
+
+                    <div className='link'>
+                        <a href={props.gitTwo}>
+                            <AiFillGithub className='rIconModal'/>Backend
+                        </a>
+                    </div>
+                </div>
+            );
+        } else if(props.live !== 'empty' && props.gitOne !== 'empty' && props.gitTwo === 'empty'){ 
+            return(
+                <div className='mobileModalLinks'>
+                    <div className='link'>
+                        <a href={props.live}>
+                            <ImChrome className='rIconModal'/>Deployed
+                        </a>
+                    </div>
+
+                    <div className='link'>
+                        <a href={props.gitOne}>
+                            <AiFillGithub className='rIconModal'/>GitHub
+                        </a>
+                    </div>
+                </div>
+            );
+        
+        } else if(props.live === 'empty' && props.gitTwo !== 'empty' && props.gitOne!== 'empty'){
+            return(
+                <div className='mobileModalLinks'>
+                    <div className='link'>
+                        <a href={props.gitOne}>
+                            <AiFillGithub className='rIconModal'/>Frontend
+                        </a>
+                    </div>
+
+                    <div className='link'>
+                        <a href={props.gitTwo}>
+                            <AiFillGithub className='rIconModal'/>Backend
+                        </a>
+                    </div>
+                </div>
+            );
+        }
+    } 
 
     function displayTags(){
         return props.tags.map((t, i) => {
@@ -28,7 +88,7 @@ export default function MobileCard(props){
     return(
         <div>
             <div className='mobileCard background'>
-                <div onClick={toggleModal} className='title'>
+                <div className='title'>
                     <h2>{props.name}</h2>
                 </div>
                 <Modal isOpen={modal} 
@@ -74,6 +134,9 @@ export default function MobileCard(props){
                 
                 <div className='tags'>
                     {displayTags()}
+                </div>
+                <div>
+                    {displayLinks()}
                 </div>
             </div>
         </div>

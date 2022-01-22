@@ -56,16 +56,19 @@ export default function MyWork(props){
 
     function displayProjects(){
         return data.map((proj, i) => {
+            let even = i % 2 === 0 ? true : false;
             return  <DisplayCard 
                         key={i}
                         pos={i}
                         name={data[i].name}
                         about={data[i].about}
                         photos={data[i].photos}
+                        mobilePhotos={data[i].mobilePhotos}
                         live={data[i].live}
                         gitOne={data[i].gitOne}
                         gitTwo={data[i].gitTwo}
                         tags={data[i].tags}
+                        even={even}
                     />
         });
         

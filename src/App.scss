@@ -49,7 +49,7 @@ a, a:visited{
     color: $textSecColor
 }
 
-.rIcon:hover{
+.rIcon:hover, .arrow:hover{
     color: $textHiColor;
 }
 
@@ -89,6 +89,8 @@ a, a:visited{
     flex-wrap: wrap;
     justify-content: center;
 
+    margin: 15px;
+
     p{
         margin: 5px 3px 0px 3px;
         padding: 2px 3px;
@@ -120,12 +122,11 @@ a, a:visited{
 /////////////////////////////////////////////////////////////////
 //                       Components
 /////////////////////////////////////////////////////////////////
-
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    
     
     margin: 10px 20px;
 
@@ -244,10 +245,18 @@ a, a:visited{
         justify-content: center;
         
         img {
-            width: 75%;
+            width: 55%;
             cursor: pointer;
         }
+
+        .MID{
+            width: 200px;
+            height: 340px;
+
+            margin: 0px 12px;
+        }
     }
+    
 }
 
 .mobileCard{
@@ -255,8 +264,14 @@ a, a:visited{
     flex-direction: column;
 
     margin: 10px 20px 30px 20px;
-    padding: 15px;
+    padding: 5px;
 
+    .mobileModalLinks{
+        display: flex;
+        justify-content: space-evenly;
+
+        margin: 20px 5px 5px 5px;
+    }
     h2 {
         margin: 10px 5px;
         font-size: 40px;
@@ -269,13 +284,17 @@ a, a:visited{
     flex-direction: column;
     align-items: center;
 
+    font-size: 14px;
     .modalPartOne{
         display: flex;
         flex-direction: column;
         align-items: center;
 
+       
+
         .modalImage{
-            width: 75%;
+            width: 80%;
+           
         }
     }
 
@@ -308,7 +327,7 @@ a, a:visited{
 
 #about{
     margin: 20px 40px;
-    font-size: 16px;   
+    font-size: 24px;   
 }
 
 #work{
@@ -321,7 +340,7 @@ a, a:visited{
 
 #contact{
     margin: 20px 40px;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 
@@ -355,14 +374,83 @@ a, a:visited{
         
 
         h1, a, a:visited{
-            font-size: 20px;
+            font-size: 30px;
         }
     }
 
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        width: 90%;
+        padding: 20px;
+        margin-left: 30px;
+        
+        background-color: $bgSecColor;
+
+        .cardImage{
+            width: 55%;
+
+            img{
+                width: 350px;
+            }
+
+            .MID{
+                width: 175px;
+            }
+        }
+
+        .cardText{
+            width: 40%;
+            
+            .links{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    
     .cardModal{
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: normal;
+        align-items: center;
+
+        .carousel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .arrow{
+            margin: 15px;
+            align-self: center;
+            font-size: 34px;
+
+            cursor: pointer;
+        }
+
+        img{
+            width: 425px;
+            -khtml-user-select: none;
+            -o-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .MI{
+            height: 360px;
+            width: 225px;
+
+            -khtml-user-select: none;
+            -o-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
 
         .modalPartOne{
             display: flex;
@@ -414,5 +502,24 @@ a, a:visited{
             font-size: 14px;
             margin: 0px 15px;
         }
+    }
+
+    #work{
+        margin: 15px 50px;
+    }
+    #about, #contact{
+        margin: 15px 75px;
+    }
+
+}
+
+
+@media only screen and (min-width: 950px){
+
+    #work{
+        margin: 15px 150px;
+    }
+    #about, #contact{
+        margin: 15px 175px;
     }
 }
