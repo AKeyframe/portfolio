@@ -45,7 +45,7 @@ const data = [
     //  },
 
     //Bookworms Bible
-     {name: 'Bookwroms Bible',
+     {name: 'Bookworms Bible',
      about: 'A purely frontend, Javascript and jQuery web application that allows readers to search for books using the Google Books API. Readers can then create and curate book lists from the results, allowing readers to easily keep track of books they wish to read and have already read.',
 
      photos: ['https://i.imgur.com/eFZ6bWQ.png', 'https://i.imgur.com/EHV3KvL.png', 'https://i.imgur.com/pBnACEY.png', 'https://i.imgur.com/HGcn23G.png',],
