@@ -16,7 +16,7 @@ export default function About(props){
                 </div>
                 <div className='icons'>
                     <div>
-                        <a href='https://docs.google.com/document/d/1G9sJpUkvHHsGJKRQ1q879Pq4IMZNWCdcEVOP_007X1o/edit?usp=sharing'>
+                        <a href='https://docs.google.com/document/d/111glwIqPnYDW5kiB1TSpB_SGxICC53Qj5gyazp6KR4w/edit?usp=sharing'>
                             <BsFileEarmarkPersonFill className='rIcon'/>
                         </a>
                     </div>
