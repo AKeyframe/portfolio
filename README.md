@@ -1,7 +1,7 @@
 # About
 A Software Engineer, Designer, and 3D artist who creates clean, efficient, and stylish solutions to not so stylish problems. Consistently contribute quality solutions to teams and clients. Bring that which only lives within our minds and imaginations to life, giving the world a bit more of the fantastical to enjoy.
 
-- [Resume]()
+- [Resume](https://docs.google.com/document/d/111glwIqPnYDW5kiB1TSpB_SGxICC53Qj5gyazp6KR4w/edit?usp=sharing)
 - [Linkedin](https://www.linkedin.com/in/alec-kagebein/)
 - [GitHub](https://github.com/AKeyframe)
 
