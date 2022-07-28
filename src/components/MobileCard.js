@@ -109,7 +109,7 @@ export default function MobileCard(props){
                                 marginRight: '50%',
                                 transform: 'translate(-50%, -50%)',
                                 border: 'solid black',
-                                backgroundColor       : '#33103f'      
+                                backgroundColor       : '#222537'      
                             },
                         }}
 
