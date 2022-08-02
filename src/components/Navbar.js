@@ -13,8 +13,6 @@ export default function Navbar(props){
     function toggleMenu(){setMenu(!menu);}
     
 
-    console.log(WIDTH)
-
     if(WIDTH < 650){
         return(
             <div className='nav'>
@@ -25,7 +23,7 @@ export default function Navbar(props){
 
                     <div className='navMenu'>
                        <FaBars style={{
-                                color: '#ead8fd',
+                                color: '#fff3b1',
                                 fontSize: '50px',
                                 transform: menu ? 'rotate(90deg)' : '', 
                                 transition: 'transform 250ms ease', // smooth transition
